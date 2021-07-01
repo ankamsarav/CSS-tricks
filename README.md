@@ -4,10 +4,10 @@ Create a dashed line similar to border in background using linear gradients
 ===========================================================================
 
 .horizontal-dashed-line {
-  height: 1px;
-  background-image: linear-gradient(90deg, #ccc, #ccc 60%, transparent 60%, transparent 100%);
-  background-size: 5px 1px;
-  border: none;
+	  height: 1px;
+	  background-image: linear-gradient(90deg, #ccc, #ccc 60%, transparent 60%, transparent 100%);
+	  background-size: 5px 1px;
+	  border: none;
 }
 
 
