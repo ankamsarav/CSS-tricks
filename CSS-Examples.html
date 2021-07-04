@@ -1,0 +1,62 @@
+
+Result Size: 825 x 754
+us go wrong here.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.red {
+    color: #f00
+}
+.blue {
+    color: #00f
+}
+.green {
+    color: #0f0
+}
+#orange {
+    color: #f60
+}
+#orange.red {
+    color: #f00
+}
+.red.blue {
+    color: #00f
+}
+</style>
+​
+</head>
+​
+​
+<body>
+<pre>
+.red {
+    color: #f00
+}
+.blue {
+    color: #00f
+}
+.green {
+    color: #0f0
+}
+#orange {
+    color: #f60
+}
+#orange.red {
+    color: #f00
+}
+.red.blue {
+    color: #00f
+}
+</pre>
+<h1 id="orange" class="blue">Id is orange and class is blue, since id has higher specificity, text is shown in orange color</h1>
+<h1 id="orange" class="red">Id is orange and class is red, Want to show text in class color. To get that #orange.red {} is used so that class specificity is increased and that to it is using ID so we are able to get the text color as red</h1>
+<h1 id="orange" class="red blue">Id is orange and class is red and blue, Want to show text in class color. Even there is style with .red.blue to increase the specificity, the text is shown in red color because the style with #orange.red has higher specificity because of ID usage</h1>
+<p class='blue red'>Class has blue and red but the color is shown in blue. Even though the second  class is red in the html the style which comes at last in the css file is considered.
+Note: most of us go wrong here.
+</p>
+​
+</body>
+</html>
+​
